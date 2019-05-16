@@ -11,8 +11,9 @@
 }
 
 body {
-  margin: auto;
+  margin: 0;
   width: 100vw;
+  padding: 0;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -629,7 +630,6 @@ header {
 
 @media screen and (max-width: 580px) {
   body {
-    min-width: 100vw;
   }
   .footer-social-container {
     flex-direction: row;
