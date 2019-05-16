@@ -12,6 +12,7 @@
 
 body {
   margin: auto;
+  width: 100vw;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -202,6 +203,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   width: 130px;
   margin-bottom: 30px;
 
@@ -626,6 +628,9 @@ header {
 }
 
 @media screen and (max-width: 580px) {
+  .footer-social-container {
+    flex-direction: row;
+  }
   .main-title {
     border: 1px solid red;
 
