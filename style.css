@@ -651,7 +651,9 @@ header {
     margin-bottom: 50px;
   }
 
+
   .list-items{
+    -webkit-appearance: auto;
     margin: 20px;
     width: 150px;
     height:400px;
