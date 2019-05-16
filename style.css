@@ -11,10 +11,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
+
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -631,7 +628,10 @@ header {
 
 @media screen and (max-width: 580px) {
   body {
-    min-width: 580px;
+    width: auto;
+    min-width: 375px;
+    overflow-x: hidden;
+    margin: auto;
   }
   .footer-social-container {
     flex-direction: row;
