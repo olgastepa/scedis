@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet'>
+    <link href='https://fonts.google.com/css?family=Baskerville' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <span style="cursor:pointer" onclick="openNav()">&#9776; <p class="menu-item">Home</p></span>
+        <img src="/Assets/Logo/SCEDIS-logo.svg" alt="" class="logo">
+    </header>
+          
+              
+    <nav id="mySidenav" class="sidenav">
+        <ul>
+            <h2><a href="#mySidenav" class="closebtn" onclick="closeNav()">&times;</h2></a>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <div class="contact-links">
+               <a href="https://www.facebook.com/scedisinfo/" class="contact-links-img"><img src="/Assets/Assets/FB.svg" alt="" class=""></a>
+               <a href="https://www.instagram.com/scedisdesign/" class="contact-links-img"><img src="/Assets/Assets/IG.svg" alt="" class=""></a>
+            </div>
+        </ul>
+    </nav>
+
+
+    <div class="typewriter">
+            <h1>Our philosophy</h1>
+        </div>
+
+    <h2 class="subheader">We are always happy to help you</h2>
+    <!-- Slideshow container -->
+    <div class="slider">
+            <div class="slides">
+              <div id="slide-1">
+                <div class="circle">S</div>
+                <h3 class="medium-title">Simplicity</h3>
+                <p class="body-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi provident amet, consequatur molestias enim quasi fugit optio odit suscipit eveniet quisquam sapiente, tempore dolores beatae quia! Praesentium, expedita consequuntur.</p>
+              </div>
+              <div id="slide-2">
+                <div class="circle">C</div>
+                <h3 class="medium-title">Creativity</h3>
+                <p class="body-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi provident amet, consequatur molestias enim quasi fugit optio odit suscipit eveniet quisquam sapiente, tempore dolores beatae quia! Praesentium, expedita consequuntur.</p>
+              </div>
+              <div id="slide-3">
+                <div class="circle">E</div>
+                <h3 class="medium-title">Elegancy</h3>
+                <p class="body-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi provident amet, consequatur molestias enim quasi fugit optio odit suscipit eveniet quisquam sapiente, tempore dolores beatae quia! Praesentium, expedita consequuntur.</p>
+              </div>
+              <div id="slide-4">
+                <div class="circle">D</div>
+                <h3 class="medium-title">Digital</h3>
+                <p class="body-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi provident amet, consequatur molestias enim quasi fugit optio odit suscipit eveniet quisquam sapiente, tempore dolores beatae quia! Praesentium, expedita consequuntur.</p>
+              </div>
+              <div id="slide-5">
+                <div class="circle">S</div>
+                <h3 class="medium-title">Studio</h3>
+                <p class="body-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi provident amet, consequatur molestias enim quasi fugit optio odit suscipit eveniet quisquam sapiente, tempore dolores beatae quia! Praesentium, expedita consequuntur.</p>
+              </div>
+            </div>
+
+            <div class="slide-numbers">
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                    <a href="#slide-4">4</a>
+                    <a href="#slide-5">5</a>
+             </div>
+          </div>
+
+
+          <footer>
+                <div class="footer-container">
+                    <div class="column">
+                        <!--<img src="/Assets/Logo/-logo-footer.svg" alt="" class="logo-footer">-->
+                        <img src="/Assets/Logo/footer-logo.svg" alt="" class="logo-footer">
+                        <h5 class="footer-heading"><a href="mailto:nscedisinfo@gmail.com" class="footer-heading">scedisinfo@gmail.com</a></h5>
+                        <h5 class="footer-heading"><a href="mailto:79213722392" class="footer-heading">+7-921-372-23-92</a></h5>
+                            <div class="footer-social-container">
+                                <div class="link"><img src="/Assets/Assets/FB-red.svg" alt="" class="link"></div>
+                                <div class="link"><img src="/Assets/Assets/IG-red.svg" alt="" class="link"></div>
+                                
+                            </div>
+                    </div>
+        
+                    <div class="column">
+                        <h4 class="footer-heading-main">company</h5>
+                        <a href="/about.html" class="footer-heading"><h5 class="footer-heading">About SCEDIS</h5></a>
+                        <a href="/contact.html" class="footer-heading"><h5 class="footer-heading">Contact us</h5></a>
+                    </div>
+        
+                    <div class="column">
+                        <h4 class="footer-heading-main">about us</h5>
+                        <a href="/about.html" class="footer-heading"><h5 class="footer-heading">Our services</h5></a>
+                        <a href="/projects.html" class="footer-heading"><h5 class="footer-heading">Projects</h5></a>
+                    </div>
+                </div>
+            </footer>
+    
+</body>
+</html>
+
+<script>
+fetch('https://api.unsplash.com/photos/random/?count=5&client_id=52d8369eb3e2576a5f5b6423865e074e9c7045761bff1ac5664ff3e0bdb57a1d') 
+   .then(response => response.json())
+   .then(data => {
+     data.forEaach(function(image, i) {
+       document.querySelector("#slide-" + (i+1)).innerHTML = `
+         <img src="${image.urls.regular}" alt="">
+         <p class="author-info">
+           <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a> on <a href="https://unsplash.com/">Unsplash</a>
+         </p>
+       `;
+     });
+   });
+
+   function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav(){
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>

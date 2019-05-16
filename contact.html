@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet'>
+    <link href='https://fonts.google.com/css?family=Baskerville' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+                <span style="cursor:pointer" onclick="openNav()">&#9776; <p class="menu-item">Contact</p></span>
+                <img src="/Assets/Logo/SCEDIS-logo.svg" alt="" class="logo">
+            </header>
+                  
+                      
+            <nav id="mySidenav" class="sidenav">
+                <ul>
+                    <h2><a href="#mySidenav" class="closebtn" onclick="closeNav()">&times;</h2></a>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html"  class="active">Contact</a></li>
+                    <div class="contact-links">
+                        <a href="https://www.facebook.com/scedisinfo/" class="contact-links-img"><img src="/Assets/Assets/FB.svg" alt="" class=""></a>
+                        <a href="https://www.instagram.com/scedisdesign/" class="contact-links-img"><img src="/Assets/Assets/IG.svg" alt="" class=""></a>
+                     </div>
+                </ul>
+            </nav>
+
+
+            <div class="typewriter">
+                <h1>Keep in touch</h1>
+            </div>
+    
+        <h2 class="subheader">We are always happy to help you</h2>
+
+
+
+    <!-- Slideshow container -->
+    <div class="slider">
+        <div class="contact-details-container">
+            <ul class="contact-list">
+                <li class="contact-list-item"><a href="mailto:79213722392" class="contact-list-item">+7-921-372-23-92</a></li>
+                <li class="contact-list-item"><a href="mailto:scedisinfo@gmail.com" class="contact-list-item">scedisinfo@gmail.com</a></li>
+                <li class="contact-list-item">live:scedisinfo</li>
+                <li class="contact-list-item">Imatra, Ahokatu 15</li>
+
+                <div class="contact-links-container">
+                    <a href="https://www.instagram.com/scedisdesign/" class="contact-img"><img src="/Assets/Assets/IG.svg" alt="" class="contact-img"></a>
+                    <a href="https://www.facebook.com/scedisinfo/" class="contact-img"><img src="/Assets/Assets/FB.svg" alt="" class="contact-img"></a>
+                </div>
+
+                <li class="contact-list-item"><img src="" alt="" class="arrow"></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id=container>
+            Send us your
+            <div id=flip>
+              <div><div>Ideas</div></div>
+              <div><div>Project</div></div>
+              <div><div>Question</div></div>
+            </div>
+            AweSoMe!
+    </div>
+
+    <form action="https://formspree.io/olgastepanova.1994@gmail.com" method="POST">
+        <input type="text" id="fname" name="firstname" placeholder="Name">
+
+        <input type="text" id="email" name="email" placeholder="Email">
+
+        <input type="text" id="fname" name="firstname" placeholder="Phone">
+
+        <input type="text" id="fname" name="firstname" placeholder="Project URL">
+        
+        <input type="text" id="fname" name="firstname" placeholder="Budjet">
+
+        <input type="text" id="fname" name="firstname" placeholder="Deadline">
+
+        <textarea id="subject" name="subject" placeholder="Message" style="height:100px"></textarea>
+
+        <input type="hidden" name="_next" value="https://os-digitaldesign.github.io/thankyou.html" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <input type="hidden" name="_next" value="https://os-digitaldesign.github.io/olgastepanova/reply.html" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <input type="submit" value="Send" class="main-button form-button">
+      </form>
+
+      <footer>
+            <div class="footer-container">
+                <div class="column">
+                    <!--<img src="/Assets/Logo/-logo-footer.svg" alt="" class="logo-footer">-->
+                    <img src="/Assets/Logo/footer-logo.svg" alt="" class="logo-footer">
+                    <h5 class="footer-heading"><a href="mailto:nscedisinfo@gmail.com" class="footer-heading">scedisinfo@gmail.com</a></h5>
+                    <h5 class="footer-heading"><a href="mailto:79213722392" class="footer-heading">+7-921-372-23-92</a></h5>
+                        <div class="footer-social-container">
+                            <div class="link"></div>
+                            <div class="link"></div>
+                        </div>
+                </div>
+    
+                <div class="column">
+                    <h4 class="footer-heading-main">company</h5>
+                    <h5 class="footer-heading">About SCEDIS</h5>
+                    <h5 class="footer-heading">Contact us</h5>
+                </div>
+    
+                <div class="column">
+                    <h4 class="footer-heading-main">about us</h5>
+                    <h5 class="footer-heading">Services</h5>
+                    <h5 class="footer-heading">Projects</h5>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>
+
+<script>
+ function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav(){
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
