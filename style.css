@@ -641,6 +641,7 @@ header {
   }
   .typewriter h1{
     font-size: 30pt;
+    width: auto;
   }
   .subheader {
     width: 70%;
