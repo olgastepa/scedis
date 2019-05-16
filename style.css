@@ -199,6 +199,11 @@ body {
 
 /* FOOTER */
 .footer-social-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  margin-bottom: 30px;
 
 }
 .link{
@@ -217,6 +222,7 @@ footer {
     display: flex;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-container {
