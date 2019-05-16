@@ -627,8 +627,7 @@ header {
 
 @media screen and (max-width: 580px) {
   body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
   }
   .footer-social-container {
     flex-direction: row;
