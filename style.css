@@ -628,7 +628,6 @@ header {
 
 @media screen and (max-width: 580px) {
   body {
-    width: auto;
     min-width: 375px;
     overflow-x: hidden;
     margin: auto;
