@@ -11,7 +11,9 @@
 }
 
 body {
-
+  width: 100vw;
+  overflow-x: hidden;
+  margin: auto;
 }
 
 /* DEMO-SPECIFIC STYLES */
