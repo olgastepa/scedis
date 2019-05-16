@@ -627,7 +627,7 @@ header {
 .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 812px) {
   body {
     min-width: 375px;
   }
