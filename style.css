@@ -11,6 +11,7 @@
 }
 
 body {
+  margin: 0;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -209,6 +210,7 @@ body {
 .link{
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 .logo-footer {
   width: 280px;
