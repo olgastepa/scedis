@@ -8,6 +8,7 @@
 
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -627,36 +628,41 @@ header {
 .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 414px) {
   body {
+    max-width: 414px;
     margin: 0;
+    overflow-x: hidden;
   }
   .footer-social-container {
     flex-direction: row;
   }
   .main-title {
-    border: 1px solid red;
 
   }
   .typewriter{
-    width: auto;
+    width: 414px;
     margin-top: 100px;
   }
   .typewriter h1{
     font-size: 30pt;
-    width: auto;
+    animation: none;
+    white-space: normal;
+    border-right: none;
   }
   .subheader {
     width: 70%;
     margin-bottom: 50px;
   }
 
+  .list-services-container {
+  }
 
   .list-items{
     -webkit-appearance: auto;
     margin: 20px;
-    width: 150px;
-    height:400px;
+    margin-bottom: 0;
+    margin-top: 15px;
   }
   .list-item-text {
     width: auto;
@@ -664,6 +670,10 @@ header {
 
   .footer-container {
     margin-left: 20px;
+    width: 375px;
+  }
+  .column {
+    padding-right: 100px;
   }
 
   form {
@@ -677,6 +687,7 @@ header {
     background-color: white;
     left: 0;
     height: 50px;
+    z-index: 1;
   }
 
   .slider {
@@ -692,19 +703,35 @@ header {
 
   .contact-details-container {
     width: 90%;
+    margin-top: 20px;
   }
 
   .slides {
     width: 90%;
+    height: auto;
   }
 
   .slides div {
     width: 100%;
   }
   .circle {
-    width: 150px !important;
-    height: 150px !important;
+    width: 100px !important;
+    height: 100px !important;
     margin-top: 5px;
+    font-size: 60pt;
+  }
+
+  .main-body-text{
+    width: 90%;
+  }
+
+  .body-text {
+    font-size: 14pt;
+  }
+
+  .medium-title {
+    height: auto;
+    padding: 0;
   }
 }
 
