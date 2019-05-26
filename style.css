@@ -15,6 +15,134 @@ body {
   margin: 0;
 }
 
+/* INDEX page description text */
+.description-text-quote {
+  font-size: 38pt;
+  text-align: center;
+  font-family: 'Baskerville';
+  font-style: italic;
+  padding: 50px;
+  width: 70%;
+  margin: auto;
+  color: #083d77;
+}
+strong {
+  font-weight: 100;
+}
+strong:before {
+  content: open-quote;
+  margin-right: 10px;
+  color: #696969;
+  font-weight: 900;
+}
+strong:after {
+  content: close-quote;
+  margin-left: 10px;
+  color: #696969;
+  font-weight: 900;
+}
+
+.description-title {
+  float: right;
+  text-align: right;
+  margin-right: 70px;
+  font-family: 'Baskerville';
+  font-size: 14pt;
+  border-top: 1px solid #083d77;
+  width: auto;
+  color: #808080;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  height: 500px;
+  background-image: radial-gradient(circle, #ff6f59, #d7263d);
+}
+
+.description-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.description-text {
+  font-size: 14pt;
+  font-family: 'Nunito';
+  text-align: center;
+  border-radius: 50%;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEAM SECTION */
+.team-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.right {
+  flex-direction: row-reverse;
+}
+.team--container-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.team-image {
+  display: block;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+.team-title {
+  color: #d7263d;
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: 100;
+  font-size: 36pt;
+}
+.team-jobtitle {
+  font-size: 20pt;
+  font-family: 'Nunito';
+  color: #ff6f59;
+  margin: 0;
+}
+.team-description {
+  color: #083d77;
+  font-family: 'Nunito';
+  font-size: 14pt;
+  line-height: 24pt;
+  margin-top: 30px;
+}
+.team-header {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Baskerville';
+  color: #083d77;
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: 100;
+  font-size: 40pt;
+}
+
 /* DEMO-SPECIFIC STYLES */
 .typewriter {
   display: flex;
@@ -33,7 +161,7 @@ body {
   border-right: 3px dotted #083d77; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 20px; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 14pt; /* Adjust as needed */
+  letter-spacing: 10pt; /* Adjust as needed */
   animation: 
     typing 3s steps(30, end),
     blink-caret .5s step-end infinite;
@@ -62,6 +190,7 @@ body {
     font-weight: 100;
     width: 30%;
     margin-top: 70px; 
+    margin-bottom: 50px;
     float: right;
     width: 30%;
     line-height: 30px;
@@ -122,8 +251,6 @@ body {
     
   }
 
-  .slide-numbers {
-  }
   .slide-numbers a {
     font-size: 12pt;
     font-family: 'Nunito';
@@ -214,7 +341,7 @@ body {
   cursor: pointer;
 }
 .logo-footer {
-  width: 280px;
+  width: 200px;
   height: 44px;
   display: block;
   margin-top: 40px;
@@ -250,7 +377,7 @@ footer {
   font-size: 10pt;
   font-family: 'Nunito';
   letter-spacing: 2pt;
-  color: #FF6F59;
+  color: #083d77;
   font-weight: 100;
   text-decoration: none;
 }
@@ -330,6 +457,8 @@ footer {
   line-height: 40px;
   text-transform: uppercase;
   letter-spacing: 3pt;
+  transition-duration: 0.6s;
+  transition-property: all;
   background-image: linear-gradient(-90deg, #D7263D, #FF725C);
 }
 .main-button:hover {
@@ -338,7 +467,8 @@ footer {
 
 /* CONTACT PAGE */
 .contact-details-container {
-  width: 40%;
+  width: 90%;
+
 }
 .contact-list {
   list-style: none;
@@ -363,7 +493,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 .contact-img {
   width: 30px;
@@ -378,6 +508,9 @@ footer {
 }
 
 /* TYPOGRAPHY */
+em {
+  font-size: 12pt;
+}
 .medium-title {
     font-size: 50px;
     color: #083D77;
@@ -398,10 +531,11 @@ footer {
 }
 
 .main-body-text {
-    font-size: 22px;
+    font-size: 20px;
     color: white;
+    line-height: 35px;
     font-family: 'Nunito';
-    font-weight:lighter;
+    font-weight:100;
     letter-spacing: 4;
     width: 50%;
 }
@@ -445,7 +579,7 @@ footer {
   color: white;
   font-family: 'Baskerville';
   font-style: italic;
-  font-size: 40pt;
+  font-size: 30pt;
   letter-spacing: 5pt;
   font-weight: 100;
 }
@@ -581,13 +715,13 @@ color: white !important;
 span {
   color: #d7263d;
   padding: 10px;
-  font-size: 22px;
+  font-size: 24px;
   font-family: 'Baskerville';
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 130px;
+  width: 140px;
 }
 
 span .menu-item {
@@ -634,6 +768,34 @@ header {
     margin: 0;
     overflow-x: hidden;
   }
+  .description-text-quote {
+    width: 90%;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .description-title {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .description-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .description-text-container {
+    flex-direction: column;
+  }
+  .team-container {
+    flex-direction: column;
+  }
+  .team--container-left {
+    width: 100%;
+  }
+  .project-note {
+    font-size: 30pt;
+  }
+
   .footer-social-container {
     flex-direction: row;
   }
@@ -723,6 +885,7 @@ header {
 
   .main-body-text{
     width: 90%;
+    font-size: 14pt;
   }
 
   .body-text {
@@ -775,7 +938,7 @@ header {
   background:#ff6f59;
 }
 #flip div:first-child div {
-  background:#4ec7f3;
+  background:#083d77;
 }
 #flip div:last-child div {
   background:#d7263d;
