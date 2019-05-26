@@ -361,11 +361,11 @@ footer {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .column {
-    padding-right: 250px;
+    padding-right: 100px;
 }
 
 /*.logo-footer {
