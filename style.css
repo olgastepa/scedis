@@ -13,18 +13,49 @@
 
 body {
   margin: 0;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-width: 100vw;
+  background-color: white;
+  left: 0;
+  height: 50px;
+  z-index: 1;
 }
 
 /* INDEX page description text */
+.quote-container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .description-text-quote {
   font-size: 38pt;
   text-align: center;
   font-family: 'Baskerville';
   font-style: italic;
-  padding: 50px;
-  width: 70%;
-  margin: auto;
+  width: 60%;
   color: #083d77;
+
+  /* text animation */
+  background-image: linear-gradient(to right, #083d77 0, #083d77 100%);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+}
+.description-text-quote:hover {
+  background-size: 100% 100%;
+  color: white;
 }
 strong {
   font-weight: 100;
@@ -43,12 +74,8 @@ strong:after {
 }
 
 .description-title {
-  float: right;
-  text-align: right;
-  margin-right: 70px;
   font-family: 'Baskerville';
-  font-size: 14pt;
-  border-top: 1px solid #083d77;
+  font-size: 12pt;
   width: auto;
   color: #808080;
 }
@@ -60,8 +87,9 @@ strong:after {
   flex-direction: column;
   width: 100%;
   margin: auto;
-  margin-top: 50px;
-  height: 500px;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image: radial-gradient(circle, #ff6f59, #d7263d);
 }
 
@@ -70,21 +98,27 @@ strong:after {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .description-text {
   font-size: 14pt;
   font-family: 'Nunito';
   text-align: center;
   border-radius: 50%;
-  margin: 20px;
+  margin: 30px;
   padding: 20px;
-  width: 200px;
-  height: 200px;
-  border: 1px solid white;
+  width: 220px;
+  height: 220px;
+  border: 5px solid white;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-delay: 0.2s;
+  transition: border .5s ease-in;
+}
+.description-text:hover {
+  border-width: 10px;
 }
 
 /* TEAM SECTION */
@@ -341,7 +375,7 @@ strong:after {
   cursor: pointer;
 }
 .logo-footer {
-  width: 200px;
+  width: 210px;
   height: 44px;
   display: block;
   margin-top: 40px;
@@ -368,6 +402,9 @@ footer {
     padding-right: 100px;
 }
 
+.logo {
+  margin-right: 5px;
+}
 /*.logo-footer {
   width: 238px;
   height: 44px;
@@ -570,6 +607,12 @@ em {
     font-family: 'Baskerville';
     font-weight: 100;
     font-size: 80pt;
+}
+
+.circle-img {
+  display: block;
+  width: 90px;
+  height: 90px;
 }
 
 /* PROJECT page */
@@ -799,9 +842,7 @@ header {
   .footer-social-container {
     flex-direction: row;
   }
-  .main-title {
-
-  }
+ 
   .typewriter{
     width: 414px;
     margin-top: 100px;
@@ -813,11 +854,8 @@ header {
     border-right: none;
   }
   .subheader {
-    width: 70%;
+    width: 80%;
     margin-bottom: 50px;
-  }
-
-  .list-services-container {
   }
 
   .list-items{
@@ -842,15 +880,7 @@ header {
     width: 95%;
   }
 
-  header {
-    position: fixed;
-    top: 0;
-    min-width: 100vw;
-    background-color: white;
-    left: 0;
-    height: 50px;
-    z-index: 1;
-  }
+
 
   .slider {
     width: 100vw;
@@ -881,6 +911,11 @@ header {
     height: 100px !important;
     margin-top: 5px;
     font-size: 60pt;
+  }
+
+  .circle-img {
+    width: 80px;
+    height: 80px;
   }
 
   .main-body-text{
@@ -953,4 +988,9 @@ header {
   71% {margin-top:0px;}
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
+}
+
+/* FOR TABLET */
+@media screen and (max-height: 780px) {
+
 }
