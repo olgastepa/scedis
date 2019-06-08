@@ -21,15 +21,7 @@ body {
   to   { opacity: 1; }
 }
 
-header {
-  position: fixed;
-  top: 0;
-  min-width: 100vw;
-  background-color: white;
-  left: 0;
-  height: 50px;
-  z-index: 1;
-}
+
 
 /* INDEX page description text */
 .quote-container {
