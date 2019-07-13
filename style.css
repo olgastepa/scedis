@@ -22,7 +22,7 @@ body {
 }
 
 
-/* DESKTOP POSITION FIXED */
+/* DESKTOP POSITION FIXED 
 header {
   position: fixed;
   top: 0;
@@ -31,7 +31,7 @@ header {
   left: 0;
   height: 50px;
   z-index: 1;
-}
+} */
 
 /* INDEX page description text */
 .quote-container {
@@ -479,6 +479,10 @@ footer {
   font-family: 'Nunito';
   font-weight: 100;
   text-align: center;
+}
+
+.list-item-text:first-letter {
+  text-transform: capitalize;
 }
 
 /* BUTTON */
@@ -992,7 +996,4 @@ header {
   100% {margin-top:-270px;}
 }
 
-/* FOR TABLET */
-@media screen and (max-height: 780px) {
 
-}
