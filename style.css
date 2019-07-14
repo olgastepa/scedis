@@ -34,6 +34,16 @@ header {
 } */
 
 /* INDEX page description text */
+.main-text {
+  font-size: 14pt;
+  font-family: 'Nunito';
+  text-align: center;
+  color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .quote-container {
   height: 500px;
   display: flex;
