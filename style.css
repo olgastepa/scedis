@@ -22,7 +22,7 @@ body {
 }
 
 
-/* DESKTOP POSITION FIXED 
+
 header {
   position: fixed;
   top: 0;
@@ -31,7 +31,7 @@ header {
   left: 0;
   height: 50px;
   z-index: 1;
-} */
+} 
 
 /* INDEX page description text */
 .main-text {
@@ -390,7 +390,7 @@ strong:after {
   width: 210px;
   height: 44px;
   display: block;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 footer {
@@ -398,20 +398,26 @@ footer {
     display: flex;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 50px;
-}
 
+    /*
+    background-color: beige;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    */
+}
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     margin-left: 50px;
 }
 
 .column {
     padding-right: 100px;
+    margin-top: 40px;
 }
 
 .logo {
@@ -436,6 +442,7 @@ footer {
   font-size: 12pt;
   color: #FF6F59;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
 
