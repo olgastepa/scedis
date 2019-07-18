@@ -543,6 +543,21 @@ footer {
   padding: 15px;
   letter-spacing: 4pt;
   text-decoration: none;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  width: 80%;
+}
+
+.contact-img {
+  width: 100px;
+}
+.contact-left {
+  width: 100%;
 }
 
 .contact-links-container {
@@ -556,8 +571,8 @@ footer {
   margin-top: 20px !important;
 }
 .contact-img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: block;
 }
 
@@ -822,6 +837,9 @@ header {
   height: 50px;
 }
 
+.main-button {
+  text-decoration: none;
+}
 
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
@@ -833,6 +851,27 @@ header {
     max-width: 414px;
     margin: 0;
     overflow-x: hidden;
+  }
+  .column {
+    margin-top: 10px;
+  }
+  .contact-list-item  {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .contact-left {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .contact-img {
+    margin-left: 0;
+  }
+  .footer-heading-main {
+    margin-top: 10px;
+  }
+  .logo-footer {
+    width: 200px;
   }
   .description-text-quote {
     width: 90%;
@@ -917,7 +956,7 @@ header {
   }
 
   .contact-details-container {
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
   }
 
