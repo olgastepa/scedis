@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><Javascriptexperiment></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <span style="cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+      <img src="/Assets/Logo/SCEDIS-logo.svg" alt="" class="logo">
+    </header>
+
+    
+    <nav id="mySidenav" class="sidenav">
+      <ul>
+        <h2><a href="#mySidenav" class="closebtn" onclick="closeNav()">&times;</h2></a>
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    
+  
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav(){
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+   
+  </script>
+</body>
+</html>
+
+

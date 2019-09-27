@@ -22,9 +22,6 @@ body {
 }
 
 
-.active-lang {
-
-}
 
 header {
   position: fixed;
@@ -515,7 +512,7 @@ footer {
   border-radius: 10px;
   text-align: center;
   color: white;
-  font-size: 22pt;
+  font-size: 17pt;
   font-family: 'Nunito';
   line-height: 40px;
   text-transform: uppercase;
@@ -823,7 +820,7 @@ span {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 140px;
+  width: 160px;
 }
 
 span .menu-item {
