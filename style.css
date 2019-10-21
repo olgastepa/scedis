@@ -597,6 +597,7 @@ em {
     font-style: italic;
     font-weight: 100;
     letter-spacing: 10pt;
+    text-align: center;
 }
 
 .body-text {
