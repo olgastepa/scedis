@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-design</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="о-нас" transform="translate(-925.000000, -2394.000000)">
+            <g id="logo-design" transform="translate(925.000000, 2394.000000)">
+                <circle id="Oval-3" fill="#D7263D" cx="50" cy="50" r="50"></circle>
+                <g transform="translate(21.000000, 21.000000)" id="Shape" fill-rule="nonzero" fill="#FCFCFC">
+                    <path d="M48.5913273,22.9857482 L58.9495818,17.0490878 L29.4753273,0.258141554 L0,17.0490878 L10.3582545,22.9857482 L0,28.8858225 L10.3582545,34.8224829 L0,40.7225572 L29.4753273,57.6146536 L58.9495818,40.7225572 L48.5913273,34.8224829 L58.9495818,28.8858225 L48.5913273,22.9857482 Z M29.4753273,2.73309518 L54.614691,17.0544681 L29.4753273,31.4630024 L4.3348909,17.0544681 L29.4753273,2.73309518 Z M12.524091,24.2264532 L29.4753273,33.9411842 L46.4265637,24.2264532 L54.614691,28.8912028 L29.4753273,43.2997371 L4.3348909,28.8912028 L12.524091,24.2264532 Z M54.614691,40.7279375 L29.4753273,55.1364718 L4.3348909,40.7279375 L12.524091,36.0631879 L29.4753273,45.7779189 L46.4265637,36.0631879 L54.614691,40.7279375 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

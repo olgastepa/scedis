@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="11px" viewBox="0 0 19 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>left-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="инструменты-copy" transform="translate(-1401.000000, -22.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(1336.000000, 20.000000)">
+                <g id="left-arrow" transform="translate(74.500000, 7.500000) scale(1, -1) rotate(90.000000) translate(-74.500000, -7.500000) translate(69.000000, -2.000000)">
+                    <path d="M1.81712364,9.23579632 L9.88381381,1.21270988 C10.1626871,0.935302424 10.1626871,0.485556007 9.88381381,0.208148554 C9.60485686,-0.069175644 9.15270802,-0.069175644 8.87379292,0.208148554 L0.302092296,8.73351566 C0.0232609014,9.01092311 0.0232609014,9.46066953 0.302092296,9.73807698 L8.87379292,18.2634441 C9.15756309,18.5360227 9.60975378,18.5281967 9.88381381,18.2459604 C10.1511354,17.9706344 10.1511354,17.5341672 9.88381381,17.2588828 L1.81712364,9.23579632 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -455,8 +455,8 @@ footer {
   }
    .icons-box{
       flex-direction: column;
-      width: 260px;
-      height: 350px;
+      width: 300px;
+      height: 440px;
       padding: 20px 10px 20px 10px;
       background-color: var(--white);
       justify-content: flex-start;
