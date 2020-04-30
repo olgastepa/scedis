@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="297px" height="52px" viewBox="0 0 297 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="313px" height="78px" viewBox="0 0 313 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>SCEDIS Copy 10</title>
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal" font-size="70" font-family="Vidaloka-Regular, Vidaloka " letter-spacing="14">
-        <g id="Контакты-Copy" transform="translate(-565.000000, -36.000000)" fill="#FFFFFF">
-            <text id="SCEDIS-Copy-10">
-                <tspan x="562" y="86">SCEDIS</tspan>
-            </text>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Контакты" transform="translate(-573.000000, -53.000000)">
+            <g id="Group" transform="translate(573.000000, 49.000000)">
+                <rect id="Rectangle-9" fill="#D7263D" x="0" y="4" width="313" height="78"></rect>
+                <text id="SCEDIS-Copy-10" font-family="Vidaloka-Regular, Vidaloka " font-size="70" font-weight="normal" letter-spacing="14" fill="#FFFFFF">
+                    <tspan x="5" y="66">SCEDIS</tspan>
+                </text>
+            </g>
         </g>
     </g>
 </svg>
