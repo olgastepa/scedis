@@ -127,6 +127,8 @@ footer {
       color: var(--white);
       text-decoration: none;
       transition: 0.5s ease;
+      padding-left: 5px;
+      padding-right: 5px;
   }
   .nav-links a:hover {
     color: var(--blue);
@@ -455,8 +457,8 @@ footer {
   }
    .icons-box{
       flex-direction: column;
-      width: 260px;
-      height: 350px;
+      width: 270px;
+      height: 470px;
       padding: 20px 10px 20px 10px;
       background-color: var(--white);
       justify-content: flex-start;
