@@ -150,6 +150,9 @@ footer {
     transition: all 0.3s ease;
   }
 @media screen and (max-width:768px) {
+    .service-description-container {
+        width: 100vw!important;
+    }
     .contact-card {
         margin: 10px!important;
     }
@@ -191,9 +194,9 @@ footer {
     }
     .nav-section {
         border-bottom: none!important;
-    }
-    nav {
-        min-height: 0;
+        position: fixed;
+        top: 0;
+        z-index: 1;
     }
     .nav-links {
         position: absolute;
@@ -216,7 +219,7 @@ footer {
         cursor: pointer;
         top: 15px;
         left: 10px;
-        position: absolute;
+        position: fixed;
         z-index: 1;
     }
     .sm-container {
@@ -233,7 +236,6 @@ footer {
         flex-direction: column;
     }
     .icons-box .icons-box {
-
     }
     .body-wide {
         width: 90vw!important;
@@ -242,7 +244,8 @@ footer {
         width: 100vw!important;
     }
     .intro-img {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .title-one {
         font-size: 22pt!important;
@@ -372,7 +375,7 @@ footer {
   /*TEXT*/
   .line{
       background-color: var(--red);
-      width: 200px;
+      width: 100px;
       height: 4px;
       display: block;
       margin: auto;
@@ -382,6 +385,7 @@ footer {
       text-align: center;
       font-family: var(--text-font-family);
       color: var(--darkblue);
+      font-size: 13pt;
   }
   .title-one {
       text-align: center;
@@ -406,6 +410,7 @@ footer {
       margin: auto;
       color: var(--darkblue);
       margin-bottom: 50px;
+      font-size: 14pt;
   }
   .title-five {
       color: var(--white);
@@ -432,10 +437,12 @@ footer {
       width: 450px;
       height: 550px;
       display: block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
   .intro-description {
       width: 50%;
       flex-direction: column;
+      margin-top: 30px;
   }
   .intro-description .line {
       margin-top: 0;
@@ -456,8 +463,8 @@ footer {
   }
    .icons-box{
       flex-direction: column;
-      width: 270px;
-      height: 470px;
+      width: 310px;
+      height: 480px;
       padding: 20px 10px 20px 10px;
       background-color: var(--white);
       justify-content: flex-start;
@@ -524,11 +531,12 @@ footer {
   .services-container .services-box {
       background-color: var(--white);
       width: 220px;
-      height: 310px;
+      height: 350px;
       margin: 20px;
       padding-left: 5px;
       padding-right: 5px;
       border-radius: 4px;
+      text-decoration: none;
   }
   .services-box .title-two {
       font-size: 14pt;
@@ -572,14 +580,16 @@ footer {
     height: auto;
 }
 .contact-card {
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 30px;
     text-decoration: none;
+
+    width: auto;
+    height: auto;
 }
 .contact-img {
     width: 40px;
@@ -890,4 +900,80 @@ footer {
 }
 .font-ptserif {
     font-family: 'PT Serif';
+}
+
+/*SERVICES DETAISL*/
+.service-description-container {
+    width: 85vw;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.service-title {
+    background-color: var(--white);
+    width: 250px;
+    height: 320px;
+    margin: 15px;
+    font-size: 14pt;
+    font-display: var(--text-font-family);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+.line-service {
+    width: 30px;
+    height: 3px;
+    background-color: var(--red);
+    display: block;
+}
+.service-image {
+    background-color: var(--white);
+    width: 250px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.servise-heading {
+    color: var(--darkblue);
+    text-align: center;
+    font-family: var(--headings-font-family);
+    overflow-y: hidden;
+}
+/*
+.service-title:nth-child(odd){
+    background-color: var(--red);
+}
+*/
+
+.price {
+    color: var(--darkblue);
+    font-family: var(--text-font-family);
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.service-desc-list {
+    width: 100vw;
+    margin: auto;
+    padding-left: 0;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.service-desc-list-item {
+    text-align: center;
+    color: var(--darkblue);
+    font-size: 14pt;
+    font-family: var(--text-font-family);
+    padding-bottom: 10px;
+    font-style: italic;
 }
