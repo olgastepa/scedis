@@ -194,7 +194,6 @@ footer {
     }
     .nav-section {
         border-bottom: none!important;
-        position: fixed;
         top: 0;
         z-index: 1;
     }
@@ -219,8 +218,8 @@ footer {
         cursor: pointer;
         top: 15px;
         left: 10px;
-        position: fixed;
         z-index: 1;
+        position: absolute;
     }
     .sm-container {
         display: none;
