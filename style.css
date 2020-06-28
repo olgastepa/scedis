@@ -498,9 +498,11 @@ footer {
       flex-direction: row;
       margin-bottom: 50px;
       width: 100%;
+      height: auto;
   }
   .job-box {
       flex-direction: column;
+      width: 450px;
   }
   .job-section:nth-child(2) {
       flex-direction: row-reverse;
