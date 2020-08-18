@@ -999,3 +999,8 @@ footer {
 }.sced1 img:hover {
     transform: scale(1.3);
 }
+
+.hideme
+{
+    opacity:0;
+}
