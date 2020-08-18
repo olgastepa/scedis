@@ -57,7 +57,7 @@
 </nav>
 
 <div class="intro-container flex-center">
-    <div class="sced">
+    <div class="sced" id="monster">
   <img src="assets/index-page/index-intro-image.jpg" alt="Macbook pro with a notebook SCEDIS on it" class="intro-img">
     </div>
   <section class="intro-description flex-center">
@@ -73,7 +73,7 @@
 <div class="line"></div>
 <h1 class="title-one">Our philosophy</h1>
 
-<div class="icons-container flex-center">
+<div class="icons-container flex-center hideme">
   <div class="icons-box flex-center">
     <img src="assets/index-page/story.svg" alt="SCEDIS's story shown with the piece of paper and pen" class="icons-img">
     <h2 class="title-two">Our story</h2>
@@ -106,7 +106,7 @@
 <h1 class="title-one">Our work</h1>
 <p class="body-text body-wide">Solving problems in a creative way, taking into account all the features of the client’s business and his wishes, is our main goal. We work with a wide range of digital design services. We develop websites, help new companies with branding, work with infographics, and also work in the field of graphic design. An individual approach to each client helps to make our work better and more unique. We will always find a time convenient for you to discuss all the nuances of work both in person and remotely.</p>
 
-<div class="job-container flex-center">
+<div class="job-container flex-center hideme">
   <div class="job-section flex-center">
       <div class="sced1">
     <img src="assets/index-page/work-image-1.png" alt="Hand holding an iphone" class="job-img">
@@ -116,7 +116,7 @@
       <p class="body-text">We find solutions for companies of both large and small businesses. The size of your business does not matter to us, we will do our best for any of our customers. Each customer will be a priority.</p>
     </div>
   </div>
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
        <div class="sced1">
       <img src="assets/index-page/work-image-2.png" alt="Hand illustrating the brand" class="job-img">
       </div>
@@ -159,5 +159,34 @@
   </div>
 </footer>
 <script src="nav.js"></script>
+    <script>
+        $(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    </script>
 </body>
 </html>
