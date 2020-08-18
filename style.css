@@ -978,3 +978,13 @@ footer {
     padding-bottom: 10px;
     font-style: italic;
 }
+
+.sced {
+    height: 550px;
+    overflow: hidden;
+}
+.sced img {
+    transition: transform .5s ease;
+}.sced img:hover {
+    transform: scale(1.3);
+}
