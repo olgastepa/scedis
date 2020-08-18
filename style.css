@@ -988,3 +988,14 @@ footer {
 }.sced img:hover {
     transform: scale(1.3);
 }
+
+
+.sced1 {
+    height: 235px;
+    overflow: hidden;
+}
+.sced1 img {
+    transition: transform .5s ease;
+}.sced1 img:hover {
+    transform: scale(1.3);
+}
