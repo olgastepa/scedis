@@ -68,13 +68,13 @@
   </section>
 </div>
 
-<p class="body-text body-wide index-text fade">At SCEDIS we offer a variety of digital design services including content creation and its strategical distribution online. We work with web and app design, graphic and visual design, branding and logo design, motion graphics, presentation design, digital art direction and strategy, social media management, paid social media advertisement. SCEDIS is a team of experienced digital designers, focusing on helping big and small businesses being developed. We also produce projects for personal usability.</p>
+<p class="body-text body-wide index-text hideme">At SCEDIS we offer a variety of digital design services including content creation and its strategical distribution online. We work with web and app design, graphic and visual design, branding and logo design, motion graphics, presentation design, digital art direction and strategy, social media management, paid social media advertisement. SCEDIS is a team of experienced digital designers, focusing on helping big and small businesses being developed. We also produce projects for personal usability.</p>
 
 
 <div class="line"></div>
 <h1 class="title-one">Our philosophy</h1>
 
-<div class="icons-container flex-center fade">
+<div class="icons-container flex-center hideme">
   <div class="icons-box flex-center">
     <img src="assets/index-page/story.svg" alt="SCEDIS's story shown with the piece of paper and pen" class="icons-img">
     <h2 class="title-two">Our story</h2>
@@ -94,8 +94,8 @@
 
 <div class="line"></div>
 <h1 class="title-one">Our experience</h1>
-<p class="body-text body-wide fade">Our studio creates unique design and web development with a team of professionals with experience in international companies. Our experts took part in front-end web development projects for companies such as Fendi, Boggi. They also participated in improving the website’s digital strategies to improve customer communication with Luce Plan products using sound effects. They created the site design with the introduction of new functions for online shopping of the Sunglass Hut online store. We worked on the design of the mobile application and the improvement of its functions for ATM Milano (a public transport company) in the field of UI and UX design. In addition, our company participated in the development of branding for a financial company and a company engaged in thermal insulation of various objects.</p>
-<p class="body-text body-wide fade">We create projects of varying degrees of complexity, use the latest design trends and the latest technologies in our work. With their help, we will help bring your company and your business to a new level of development and profitability. We are ready to offer our customers more than they expect from our work.</p>
+<p class="body-text body-wide hideme">Our studio creates unique design and web development with a team of professionals with experience in international companies. Our experts took part in front-end web development projects for companies such as Fendi, Boggi. They also participated in improving the website’s digital strategies to improve customer communication with Luce Plan products using sound effects. They created the site design with the introduction of new functions for online shopping of the Sunglass Hut online store. We worked on the design of the mobile application and the improvement of its functions for ATM Milano (a public transport company) in the field of UI and UX design. In addition, our company participated in the development of branding for a financial company and a company engaged in thermal insulation of various objects.</p>
+<p class="body-text body-wide hideme">We create projects of varying degrees of complexity, use the latest design trends and the latest technologies in our work. With their help, we will help bring your company and your business to a new level of development and profitability. We are ready to offer our customers more than they expect from our work.</p>
 
 
 <div class="quote-container flex-center fade">
@@ -105,10 +105,10 @@
 
 <div class="line"></div>
 <h1 class="title-one">Our work</h1>
-<p class="body-text body-wide fade">Solving problems in a creative way, taking into account all the features of the client’s business and his wishes, is our main goal. We work with a wide range of digital design services. We develop websites, help new companies with branding, work with infographics, and also work in the field of graphic design. An individual approach to each client helps to make our work better and more unique. We will always find a time convenient for you to discuss all the nuances of work both in person and remotely.</p>
+<p class="body-text body-wide hideme">Solving problems in a creative way, taking into account all the features of the client’s business and his wishes, is our main goal. We work with a wide range of digital design services. We develop websites, help new companies with branding, work with infographics, and also work in the field of graphic design. An individual approach to each client helps to make our work better and more unique. We will always find a time convenient for you to discuss all the nuances of work both in person and remotely.</p>
 
 <div class="job-container flex-center">
-  <div class="job-section flex-center fade">
+  <div class="job-section flex-center hideme">
       <div class="sced1">
     <img src="assets/index-page/work-image-1.png" alt="Hand holding an iphone" class="job-img">
       </div>
@@ -117,7 +117,7 @@
       <p class="body-text">We find solutions for companies of both large and small businesses. The size of your business does not matter to us, we will do our best for any of our customers. Each customer will be a priority.</p>
     </div>
   </div>
-  <div class="job-section flex-center fade">
+  <div class="job-section flex-center hideme">
        <div class="sced1">
       <img src="assets/index-page/work-image-2.png" alt="Hand illustrating the brand" class="job-img">
       </div>
@@ -126,7 +126,7 @@
       <p class="body-text">The visual perception of the company is no less important than the product that it presents on the market. We make every brand popular in the market. You can always rely on us to create a unique and recognizable brand that your customers cannot pass.</p>
     </div>
   </div>
-  <div class="job-section flex-center fade">
+  <div class="job-section flex-center hideme">
        <div class="sced1">
     <img src="assets/index-page/work-image-3.png" alt="Guy working on a computer" class="job-img">
       </div>
@@ -161,20 +161,24 @@
 </footer>
 <script src="nav.js"></script>
    <script>
-       $(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".fade").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(300,1);}
-      } 
+	$(document).ready(function() { 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){  
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
     });
-  }).scroll(); //invoke scroll-handler on page-load
+    
 });
-    </script>
+	</script>
 </body>
 </html>
