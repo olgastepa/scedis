@@ -1003,3 +1003,8 @@ footer {
 .fade {
   opacity: 1;
 }
+
+.hideme
+{
+    opacity:0;
+}
