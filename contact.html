@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" href="assets/logo.svg" type="image/gif">
     <title>Web Design Services Finland | Branding Services Finland</title>
@@ -79,17 +80,17 @@
 
 </div>
 <div class="contact-container flex-center">
-  <a href="mailto:scedisinfo@gmail.com" class="contact-card">
+  <a href="mailto:scedisinfo@gmail.com" class="contact-card hideme">
       <img src="assets/contact-page/email.svg" alt="email icon" class="contact-img">
       <h2 class="title-contact">All questions</h2>
       <h2 class="title-two">scedisinfo@gmail.com</h2>
   </a>
-  <a href="mailto:scedisolga@gmail.com" class="contact-card">
+  <a href="mailto:scedisolga@gmail.com" class="contact-card hideme">
       <img src="assets/contact-page/email.svg" alt="email icon" class="contact-img">
       <h2 class="title-contact">Digital art director</h2>
       <h2 class="title-two">scedisolga@gmail.com</h2>
   </a>
-  <a href="mailto:irinascedis@gmail.com" class="contact-card">
+  <a href="mailto:irinascedis@gmail.com" class="contact-card hideme">
       <img src="assets/contact-page/email.svg" alt="email icon" class="contact-img">
       <h2 class="title-contact">Graphic designer</h2>
       <h2 class="title-two">irinascedis@gmail.com</h2>
@@ -98,8 +99,8 @@
 </div>
 
 <div class="line"></div>
-<h1 class="title-one">Connect with us!</h1>
-<div class="contact-container flex-center">
+<h1 class="title-one hideme">Connect with us!</h1>
+<div class="contact-container flex-center hideme">
         <a href="https://www.instagram.com/scedisdesign/" target="_blank" class="services-box">
             <img src="assets/contact-page/Instagram.svg" alt="instagram icon" class="contact-img">
         </a>
@@ -128,5 +129,26 @@
   </div>
 </footer>
 <script src="nav.js"></script>
+    
+    <script>
+	$(document).ready(function() { 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){  
+                       var bottom_of_object = $(this).position().top + ($(this).outerHeight())/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+	</script>
 </body>
 </html>
