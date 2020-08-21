@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" href="assets/logo.svg" type="image/gif">
     <title>Pääsivu</title>
@@ -53,7 +55,9 @@
 </nav>
 
 <div class="intro-container flex-center">
+    <div class="sced">
   <img src="assets/index-page/index-intro-image.jpg" alt="index-intro-image" class="intro-img">
+    </div>
   <section class="intro-description flex-center">
     <div class="line"></div>
     <h1 class="title-one">Tervetuloa SCEDIS</h1>
@@ -65,24 +69,24 @@
 <h1 class="title-one">Meidän filosofiamme</h1>
 
 <div class="icons-container flex-center">
-  <div class="icons-box flex-center">
+  <div class="icons-box flex-center hideme">
     <img src="assets/index-page/story.svg" alt="story" class="icons-img">
     <h2 class="title-two">Taustamme</h2>
     <p class="body-text">Studion perusti digitaalinen suunnittelija ja digitaalinen taiteilija vuonna 2019. Päätimme, että kehittelemme digitaalista suunnittelua Suomen eteläosissa ja autamme edistämään paikallisia tuotemerkkejä ja tuotteita koko Suomen mittakaavassa</p>
   </div>
-  <div class="icons-box flex-center">
+  <div class="icons-box flex-center hideme">
     <img src="assets/index-page/vision.svg" alt="vision" class="icons-img">
     <h2 class="title-two">Näkökantamme</h2>
     <p class="body-text">Luovuus, aistikkuus ja tarkkuus ovat visiomme. Ratkaisemme ongelmia aistikkaasti. Saamme aikaiseksi luovuutta ja ainutlaatuisuutta esittäviä tuotteita pitäen kiinni tavanomaisuudesta ja käytännöllisyydestä niiden käytön suhteen</p>
   </div>
-  <div class="icons-box flex-center">
+  <div class="icons-box flex-center hideme">
     <img src="assets/index-page/work.svg" alt="work" class="icons-img">
     <h2 class="title-two">Tavoitteemme</h2>
     <p class="body-text">Ongelmien ratkaiseminen luovasti on perustehtävämme. Olemme tekemisissä laajan palvelupiirin kanssa digitaaliseen suunnitteluun nähden. Kehittelemme web-nettisivuja, autamme uusia yhtiöitä tuotemerkkien edistämisessä, valmistamme infograafisia videoita sekä toimimme graafisen suunnittelun alalla</p>
   </div>
 </div>
 
-<p class="body-text body-wide">SCEDIS:issä tarjoamme erilaisia palveluita digitaalisen suunnittelun alalla, joukossaan sisällön luonti ja sen strateginen levittäminen Internetissä. Toiminta-alaamme kuuluvat web-suunnittelu ja -kehittely, sovellusohjelmien suunnittelu, graafinen ja visuaalinen suunnittelu, tuotemerkkien kehittely ja logojen suunnittelu, animaatiografiikka, esitysaineistojen suunnittelu, sosiaaliverkkojen hallinta, maksullinen mainonta sosiaaliverkoissa. SCEDIS on työryhmä kokeneita digitaalisia suunnittelijoita, joka auttaa suuria ja pieniä yrityksiä kehittymään sekä luo hankkeita henkilökohtaiseen käyttöön.</p>
+<p class="body-text body-wide hideme">SCEDIS:issä tarjoamme erilaisia palveluita digitaalisen suunnittelun alalla, joukossaan sisällön luonti ja sen strateginen levittäminen Internetissä. Toiminta-alaamme kuuluvat web-suunnittelu ja -kehittely, sovellusohjelmien suunnittelu, graafinen ja visuaalinen suunnittelu, tuotemerkkien kehittely ja logojen suunnittelu, animaatiografiikka, esitysaineistojen suunnittelu, sosiaaliverkkojen hallinta, maksullinen mainonta sosiaaliverkoissa. SCEDIS on työryhmä kokeneita digitaalisia suunnittelijoita, joka auttaa suuria ja pieniä yrityksiä kehittymään sekä luo hankkeita henkilökohtaiseen käyttöön.</p>
 
 <div class="quote-container flex-center">
   <h3 class="title-three">«Olla tarkkoja, luovia ja aistikkaitat»</h3>
@@ -93,22 +97,28 @@
 <h1 class="title-one">Meidän työmme</h1>
 
 <div class="job-container flex-center">
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
+      <div class="sced1">
     <img src="assets/index-page/work-image-1.png" alt="work-image-1" class="job-img">
+      </div>
     <div class="job-box flex-center">
       <h2 class="title-two">Liiketoiminnan kehitys</h2>
       <p class="body-text">Löydämme ratkaisuja suurille ja pienille liiketoimintayrityksille</p>
     </div>
   </div>
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
+      <div class="sced1">
       <img src="assets/index-page/work-image-2.png" alt="work-image-2" class="job-img">
+      </div>
     <div class="job-box flex-center">
       <h2 class="title-two">Suunnittele tuotemerkki</h2>
       <p class="body-text">Teemme jokaisesta tuotemerkistä suositun tuotemarkkinoilla</p>
     </div>
   </div>
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
+      <div class="sced1">
     <img src="assets/index-page/work-image-3.png" alt="work-image-3" class="job-img">
+      </div>
       <div class="job-box flex-center">
         <h2 class="title-two">Ongelmanratkaisu</h2>
         <p class="body-text">Suunnittelemme, luomme ja löydämme ratkaisuja kaikkiin mahdillisiin tarpeisiin</p>
@@ -139,5 +149,26 @@
   </div>
 </footer>
 <script src="nav.js"></script>
+    <script src="nav.js"></script>
+   <script>
+	$(document).ready(function() { 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){  
+                       var bottom_of_object = $(this).position().top + ($(this).outerHeight())/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+	</script>
 </body>
 </html>
