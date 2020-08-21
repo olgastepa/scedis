@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" href="assets/logo.svg" type="image/gif">
     <title>Tietoja meistä SCEDIS</title>
@@ -44,7 +45,9 @@
 </nav>
 
 <div class="intro-container flex-center">
+     <div class="sced">
   <img src="assets/about-page/about-intro-image.jpg" alt="about-intro-image" class="intro-img">
+    </div>
   <section class="intro-description flex-center">
     <div class="line"></div>
     <h1 class="title-one">Olemme laaja valikoima digitaalisen suunnittelun studioita</h1>
@@ -56,37 +59,37 @@
 <h1 class="title-one">Palvelumme</h1>
 
 <div class="services-container flex-center">
-  <a href="web-suunnittelu.html" class="services-box">
+  <a href="web-suunnittelu.html" class="services-box hideme">
       <img src="assets/about-page/web-design.svg" alt="web-design" class="services-img">
       <h2 class="title-two">Web-suunnittelu & kehittäminen</h2>
       <p class="body-text service-description">Luomme helppokäyttöisiä interfeisejä yhdistettyinä esteettiseen ulkoasuun</p>
   </a>
-  <a href="branding-fi.html" class="services-box">
+  <a href="branding-fi.html" class="services-box hideme">
       <img src="assets/about-page/branding.svg" alt="branding" class="services-img">
       <h2 class="title-two">Tuotemerkkikehittely</h2>
       <p class="body-text service-description">Luomme vahvan brändin, joka tulee huomionarvoiseksi markkinoilla</p>
   </a>
-  <a href="logo.html" class="services-box">
+  <a href="logo.html" class="services-box hideme">
       <img src="assets/about-page/logo-design.svg" alt="logo-design" class="services-img">
       <h2 class="title-two">Logojen suunnittelu</h2>
       <p class="body-text service-description">Luomme tuotemerkkien identtisyysstrategian</p>
   </a>
-  <a href="graafinen-suunnittelu.html" class="services-box">
+  <a href="graafinen-suunnittelu.html" class="services-box hideme">
       <img src="assets/about-page/graphic-design.svg" alt="graphic-design" class="services-img">
       <h2 class="title-two">Graafinen suunnittelu</h2>
       <p class="body-text service-description">Luomme visuaalisen yhteyden ideasta lopputuotteeseen</p>
   </a>
-  <a href="Infografiikka.html" class="services-box">
+  <a href="Infografiikka.html" class="services-box hideme">
       <img src="assets/about-page/motion-graphics.svg" alt="motion-graphics" class="services-img">
       <h2 class="title-two">Infografiikka</h2>
       <p class="body-text service-description">Löydämme yksinkertaisia ratkaisuja vahvoille ja monimutkaisille ideoille</p>
   </a>
-  <a href="Esittelyjen-Suunnittelu.html" class="services-box">
+  <a href="Esittelyjen-Suunnittelu.html" class="services-box hideme">
       <img src="assets/about-page/presentation-design.svg" alt="presentation-design" class="services-img">
       <h2 class="title-two">Esitysaineistojen suunnittelu</h2>
       <p class="body-text service-description">Tarjoamme tietoja, joissa esittelytaiteeseen sekoitettujen havaintoelementtien sinfoniaa</p>
   </a>
-  <a href="Sosiaalisen-median.html" class="services-box">
+  <a href="Sosiaalisen-median.html" class="services-box hideme">
       <img src="assets/about-page/social-media.svg" alt="social-media" class="services-img">
       <h2 class="title-two">Sosiaaliverkot</h2>
       <p class="body-text service-description">Laitamme mainoksia sosiaaliverkkoihin sosiaaliverkkojen hallinta mukaan luettuna</p>
@@ -117,5 +120,25 @@
   </div>
 </footer>
 <script src="nav.js"></script>
+      <script>
+	$(document).ready(function() { 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){  
+                       var bottom_of_object = $(this).position().top + ($(this).outerHeight())/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+	</script>
 </body>
 </html>
