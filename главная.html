@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" href="assets/logo.svg" type="image/gif">
     <title>Главная SCEDIS</title>
@@ -44,7 +45,9 @@
 </nav>
 
 <div class="intro-container flex-center">
+    <div class="sced">
   <img src="assets/index-page/index-intro-image.jpg" alt="ноутбук с записной книжкой SCEDIS" class="intro-img">
+    </div>
   <section class="intro-description flex-center">
     <div class="line"></div>
     <h1 class="title-one">Добро пожаловать в SCEDIS</h1>
@@ -58,17 +61,17 @@
 <h1 class="title-one">Наша философия</h1>
 
 <div class="icons-container flex-center">
-  <div class="icons-box flex-center">
+  <div class="icons-box flex-center hideme">
     <img src="assets/index-page/story.svg" alt="иконка с листом бумаги и ручкой" class="icons-img">
     <h2 class="title-two">Наша история</h2>
     <p class="body-text">Студия была основана цифровым дизайнером и цифровым художником в 2019 году. Мы решили развивать цифровой дизайн в южной части территории Финляндии и помогать продвигать местные бренды и продукты по всей территории Финляндии</p>
   </div>
-  <div class="icons-box flex-center">
+  <div class="icons-box flex-center hideme">
     <img src="assets/index-page/vision.svg" alt="иконка с глазом" class="icons-img">
     <h2 class="title-two">Наш взгляд</h2>
     <p class="body-text">Творчество, элегантность и точность - это наше видение. Мы решаем проблемы элегантно. Мы разрабатываем креативные и оригинальные продукты, придерживаясь простоты и функциональности в их использовании</p>
   </div>
-  <div class="icons-box flex-center">
+  <div class="icons-box flex-center hideme">
     <img src="assets/index-page/work.svg" alt="иконка с пожатием рук и командой" class="icons-img">
     <h2 class="title-two">Наша работа</h2>
     <p class="body-text">Решение проблем креативным способом - наша основная цель. Мы работаем с широким спектром услуг цифрового дизайна. Разрабатываем веб-сайты, помогаем новым компаниям с брендингом, производим инфографические видео, также работаем в сфере графического дизайна</p>
@@ -91,22 +94,28 @@
 <p class="body-text body-wide">Решение проблем креативным способ с учетом всех особенностей бизнеса клиента и его пожеланий – наша основная цель. Мы работаем с широким спектром услуг цифрового дизайна. Разрабатываем веб сайты, помогаем новым компаниям с брендингом, работаем с инфографикой, также работаем в сфере графического дизайна. Индивидуальный подход к каждому клиенту помогает сделать нашу работу более качественной и уникальной. Мы всегда найдём удобное для вас время, чтобы обсудить все нюансы работы как при личной встрече, так и дистанционно.</p>
 
 <div class="job-container flex-center">
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
+      <div class="sced1">
     <img src="assets/index-page/work-image-1.png" alt="телефон в руке" class="job-img">
+      </div>
     <div class="job-box flex-center">
       <h2 class="title-two">Развитие бизнеса</h2>
       <p class="body-text">Мы находим решения для компаний как большого, так и малого бизнеса. Для нас не имеет значение размер вашего бизнеса, мы приложим все усилия для любого из наших клиентов. Каждый клиент будет в приоритете. </p>
     </div>
   </div>
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
+      <div class="sced1">
       <img src="assets/index-page/work-image-2.png" alt="рука создает брэнд" class="job-img">
+      </div>
     <div class="job-box flex-center">
       <h2 class="title-two">Создание бренда</h2>
       <p class="body-text">Визуальное восприятие компании является не менее важным, чем продукт, который она представляет на рынке. Мы делаем каждый бренд популярным на рынке. Вы всегда можете положиться на нас в вопросе создания уникального и узнаваемого бренда, мимо которого не смогут пройти ваши клиенты. </p>
     </div>
   </div>
-  <div class="job-section flex-center">
+  <div class="job-section flex-center hideme">
+      <div class="sced1">
     <img src="assets/index-page/work-image-3.png" alt="человек сидя за компьютером производит исследование" class="job-img">
+      </div>
       <div class="job-box flex-center">
         <h2 class="title-two">Решение проблем</h2>
         <p class="body-text">Наша команда поможет каждому найти нужное решение, выбрать оптимальный вариант цифрового дизайна и технологий, которые визуализируют ваши продукты и услуги сделают их наиболее привлекательными для ваших потенциальных клиентов. </p>
@@ -136,5 +145,26 @@
   </div>
 </footer>
 <script src="nav.js"></script>
+    
+     <script>
+	$(document).ready(function() { 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){  
+                       var bottom_of_object = $(this).position().top + ($(this).outerHeight())/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+	</script>
 </body>
 </html>
