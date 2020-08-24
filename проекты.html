@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" href="assets/logo.svg" type="image/gif">
     <title>Проекты SCEDIS</title>
@@ -59,7 +60,7 @@
   <p class="body-text body-wide">Проекты & клиенты</p>
 
 <div class="services-container flex-center projects">
-    <a href="park2-ru.html" class="container">
+    <a href="park2-ru.html" class="container hideme">
         <div class="container">
         <div class="overlay">
           <div class="text">Веб дизайн & разработка</div>
@@ -67,7 +68,7 @@
           <img src="assets/project-page/Park2/Park2-intro.jpg" alt="вебдизайн Park2" class="image">
       </div>
     </a>
-    <a href="polinvest20-ru.html" class="container">
+    <a href="polinvest20-ru.html" class="container hideme">
     <div class="container">
         <div class="overlay">
           <div class="text">Веб дизайн & разработка</div>
@@ -98,5 +99,27 @@
     </footer>
 
 <script src="nav.js"></script>
+    
+    
+     <script>
+	$(document).ready(function() { 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){  
+                       var bottom_of_object = $(this).position().top + ($(this).outerHeight())/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+	</script>
 </body>
 </html>
