@@ -1008,3 +1008,8 @@ footer {
 {
     opacity:0;
 }
+video {
+    width: 90vw;
+    margin: auto;
+    display: block;
+}
