@@ -1013,3 +1013,8 @@ video {
     margin: auto;
     display: block;
 }
+
+em {
+    color: var(--red);
+    font-weight: bold;
+}
