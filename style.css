@@ -765,6 +765,15 @@ footer {
   .color-four-park2 {
       background-color: #C5E1F2;
   }
+  .color-one-irma {
+      background-color: #ADB2F4;
+  }
+  .color-two-irma {
+      background-color: #444D86;
+  }
+  .color-three-irma {
+      background-color: white;
+  }
   
   .projcet-img-logo {
       width: 500px;
@@ -901,6 +910,17 @@ footer {
 }
 .font-ptserif {
     font-family: 'PT Serif';
+}
+.font-forum {
+    font-family: 'Forum';
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: url(assets/project-page/Irma/evolventa-font/Evolventa-Regular.otf);
+  }
+.font-evolventa {
+    font-family: 'Evolventa';
 }
 
 /*SERVICES DETAISL*/
