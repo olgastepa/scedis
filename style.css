@@ -150,6 +150,11 @@ footer {
     transition: all 0.3s ease;
   }
 @media screen and (max-width:768px) {
+    .news {
+        width: 90%!important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .service-description-container {
         width: 100vw!important;
     }
@@ -1032,4 +1037,10 @@ video {
     width: 90vw;
     margin: auto;
     display: block;
+}
+
+.news {
+    display: block;
+    width: 50%;
+    margin: auto;
 }
