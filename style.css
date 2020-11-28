@@ -438,8 +438,9 @@ footer {
       justify-content: space-around;
   }
   .intro-img {
-      width: 450px;
-      height: 550px;
+      width: 90%;
+      height: auto;
+      margin: auto;
       display: block;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
