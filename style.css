@@ -54,6 +54,7 @@ footer {
     margin-top: 50px;
     flex-direction: row;
     justify-content: space-around!important;
+    align-items: flex-start;
     padding-top: 30px;
     padding-bottom: 30px;
     flex-wrap: nowrap!important;
@@ -129,6 +130,7 @@ footer {
       transition: 0.5s ease;
       padding-left: 5px;
       padding-right: 5px;
+      font-size: 1.2em;
   }
   .nav-links a:hover {
     color: var(--blue);
@@ -238,8 +240,6 @@ footer {
     .icons-container {
         height: auto;
         flex-direction: column;
-    }
-    .icons-box .icons-box {
     }
     .body-wide {
         width: 90vw!important;
@@ -389,14 +389,15 @@ footer {
       text-align: center;
       font-family: var(--text-font-family);
       color: var(--darkblue);
-      font-size: 13pt;
+      font-size: 1.3em!important;
+      line-height: 40px;
   }
   .title-one {
       text-align: center;
       font-family: var(--headings-font-family);
       color: var(--blue);
       letter-spacing: 1pt;
-      font-size: 40pt;
+      font-size: 2em;
   }
   .title-two {
     text-align: center;
@@ -421,6 +422,7 @@ footer {
       font-family: var(--headings-font-family);
       letter-spacing: 1pt;
       font-size: 1em;
+      font-weight: bold;
   }
   .footer-text {
       color: var(--white);
@@ -468,8 +470,8 @@ footer {
   }
    .icons-box{
       flex-direction: column;
-      width: 310px;
-      height: 480px;
+      width: 330px;
+      height: 700px;
       padding: 20px 10px 20px 10px;
       background-color: var(--white);
       justify-content: flex-start;
@@ -537,13 +539,19 @@ footer {
   }
   .services-container .services-box {
       background-color: var(--white);
-      width: 220px;
-      height: 350px;
+      width: 250px;
+      height: 410px;
       margin: 20px;
       padding-left: 5px;
       padding-right: 5px;
       border-radius: 4px;
       text-decoration: none;
+  }
+  .services-container .services-box .title-two {
+      font-size: 1.5em;
+  } 
+  .services-container .services-box .body-text {
+      line-height: 30px;
   }
   .services-box .title-two {
       font-size: 14pt;
@@ -603,13 +611,13 @@ footer {
     margin: 35px;
 }
 .title-contact{
-    font-size: 14pt;
+    font-size: 1.5em;
     font-family: var(--headings-font-family);
     color: var(--blue);
     font-weight: bold;
 }
 .contact-card .title-two {
-    font-size: 12pt;
+    font-size: 1.3em;
     font-family: var(--text-font-family);
     color: var(--darkblue);
 }
@@ -699,9 +707,10 @@ footer {
   }
   .project-keywords-item {
       color: var(--darkblue);
-      font-size: 14pt;
+      font-size: 1.3em;
       margin-bottom: 15px;
       text-align: center;
+      font-family: var(--headings-font-family);
   }
   /*POLINVEST PAGE*/
   .font-family-container {
@@ -732,7 +741,6 @@ footer {
   .left {
       text-align: left;
       margin-left: 20px;
-      font-size: 24pt;
   }
   .color-pallette-container {
       width: 35vw;
@@ -1042,6 +1050,8 @@ video {
 
 .news {
     display: block;
-    width: 50%;
+    width: 80%;
     margin: auto;
 }
+
+
